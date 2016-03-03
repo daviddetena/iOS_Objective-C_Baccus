@@ -16,6 +16,8 @@
 		59EA9D5E1C884F1E003A682A /* DTCWineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59EA9D5C1C884F1E003A682A /* DTCWineViewController.xib */; };
 		59EA9D611C8859E5003A682A /* splitView_score_glass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59EA9D601C8859E5003A682A /* splitView_score_glass@2x.png */; };
 		59EA9D641C885A9A003A682A /* bembibre.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59EA9D631C885A9A003A682A /* bembibre.jpg */; };
+		59EA9D681C886291003A682A /* DTCWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EA9D661C886291003A682A /* DTCWebViewController.m */; };
+		59EA9D691C886291003A682A /* DTCWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59EA9D671C886291003A682A /* DTCWebViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,9 @@
 		59EA9D5C1C884F1E003A682A /* DTCWineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTCWineViewController.xib; sourceTree = "<group>"; };
 		59EA9D601C8859E5003A682A /* splitView_score_glass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splitView_score_glass@2x.png"; sourceTree = "<group>"; };
 		59EA9D631C885A9A003A682A /* bembibre.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bembibre.jpg; sourceTree = "<group>"; };
+		59EA9D651C886291003A682A /* DTCWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCWebViewController.h; sourceTree = "<group>"; };
+		59EA9D661C886291003A682A /* DTCWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCWebViewController.m; sourceTree = "<group>"; };
+		59EA9D671C886291003A682A /* DTCWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTCWebViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +103,9 @@
 		59EA9D5F1C884F22003A682A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				59EA9D651C886291003A682A /* DTCWebViewController.h */,
+				59EA9D661C886291003A682A /* DTCWebViewController.m */,
+				59EA9D671C886291003A682A /* DTCWebViewController.xib */,
 				59EA9D5A1C884F1E003A682A /* DTCWineViewController.h */,
 				59EA9D5B1C884F1E003A682A /* DTCWineViewController.m */,
 				59EA9D5C1C884F1E003A682A /* DTCWineViewController.xib */,
@@ -175,6 +183,7 @@
 				59EA9D611C8859E5003A682A /* splitView_score_glass@2x.png in Resources */,
 				5936182A1C8834EB00721842 /* Assets.xcassets in Resources */,
 				5936182D1C8834EB00721842 /* LaunchScreen.storyboard in Resources */,
+				59EA9D691C886291003A682A /* DTCWebViewController.xib in Resources */,
 				59EA9D641C885A9A003A682A /* bembibre.jpg in Resources */,
 				59EA9D5E1C884F1E003A682A /* DTCWineViewController.xib in Resources */,
 			);
@@ -191,6 +200,7 @@
 				593618391C88444400721842 /* DTCWineModel.m in Sources */,
 				593618251C8834EB00721842 /* main.m in Sources */,
 				59EA9D5D1C884F1E003A682A /* DTCWineViewController.m in Sources */,
+				59EA9D681C886291003A682A /* DTCWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -65,7 +65,7 @@
         _type = aType;
         _origin = anOrigin;
         _grapes = arrayOfGrapes;
-        _wineCompanyName = aWineCompanyName;
+        _wineCompanyWeb = anURL;
         _notes = aNotes;
         _rating = aRating;
         _photo = aPhoto;

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "DTCWineModel.h"
 #import "DTCWineViewController.h"
+#import "DTCWebViewController.h"
 
 @interface AppDelegate ()
 
@@ -32,10 +33,11 @@
                                                   photo:[UIImage imageNamed:@"bembibre.jpg"]];
     
     // Create controller
-    DTCWineViewController *wineVC = [[DTCWineViewController alloc] initWithModel:tintorro];
+    //DTCWineViewController *wineVC = [[DTCWineViewController alloc] initWithModel:tintorro];
+    DTCWebViewController *webVC = [[DTCWebViewController alloc] initWithModel:tintorro];
     
     // Set controller as default root controller
-    [self.window setRootViewController:wineVC];
+    [self.window setRootViewController:webVC];
     
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
