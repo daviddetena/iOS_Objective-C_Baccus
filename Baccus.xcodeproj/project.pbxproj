@@ -12,6 +12,8 @@
 		5936182A1C8834EB00721842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593618291C8834EB00721842 /* Assets.xcassets */; };
 		5936182D1C8834EB00721842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5936182B1C8834EB00721842 /* LaunchScreen.storyboard */; };
 		593618391C88444400721842 /* DTCWineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 593618381C88444400721842 /* DTCWineModel.m */; };
+		59B6A4441C88C5CB00E7771A /* comtesDeChampagne.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59B6A4421C88C5CB00E7771A /* comtesDeChampagne.jpg */; };
+		59B6A4451C88C5CB00E7771A /* zarate.gif in Resources */ = {isa = PBXBuildFile; fileRef = 59B6A4431C88C5CB00E7771A /* zarate.gif */; };
 		59EA9D5D1C884F1E003A682A /* DTCWineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EA9D5B1C884F1E003A682A /* DTCWineViewController.m */; };
 		59EA9D5E1C884F1E003A682A /* DTCWineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59EA9D5C1C884F1E003A682A /* DTCWineViewController.xib */; };
 		59EA9D611C8859E5003A682A /* splitView_score_glass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59EA9D601C8859E5003A682A /* splitView_score_glass@2x.png */; };
@@ -30,6 +32,8 @@
 		5936182E1C8834EB00721842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		593618371C88444400721842 /* DTCWineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCWineModel.h; sourceTree = "<group>"; };
 		593618381C88444400721842 /* DTCWineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCWineModel.m; sourceTree = "<group>"; };
+		59B6A4421C88C5CB00E7771A /* comtesDeChampagne.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = comtesDeChampagne.jpg; sourceTree = "<group>"; };
+		59B6A4431C88C5CB00E7771A /* zarate.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = zarate.gif; sourceTree = "<group>"; };
 		59EA9D5A1C884F1E003A682A /* DTCWineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCWineViewController.h; sourceTree = "<group>"; };
 		59EA9D5B1C884F1E003A682A /* DTCWineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCWineViewController.m; sourceTree = "<group>"; };
 		59EA9D5C1C884F1E003A682A /* DTCWineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTCWineViewController.xib; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 		59EA9D621C8859EE003A682A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				59B6A4421C88C5CB00E7771A /* comtesDeChampagne.jpg */,
+				59B6A4431C88C5CB00E7771A /* zarate.gif */,
 				59EA9D631C885A9A003A682A /* bembibre.jpg */,
 				59EA9D601C8859E5003A682A /* splitView_score_glass@2x.png */,
 			);
@@ -181,9 +187,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				59EA9D611C8859E5003A682A /* splitView_score_glass@2x.png in Resources */,
+				59B6A4441C88C5CB00E7771A /* comtesDeChampagne.jpg in Resources */,
 				5936182A1C8834EB00721842 /* Assets.xcassets in Resources */,
 				5936182D1C8834EB00721842 /* LaunchScreen.storyboard in Resources */,
 				59EA9D691C886291003A682A /* DTCWebViewController.xib in Resources */,
+				59B6A4451C88C5CB00E7771A /* zarate.gif in Resources */,
 				59EA9D641C885A9A003A682A /* bembibre.jpg in Resources */,
 				59EA9D5E1C884F1E003A682A /* DTCWineViewController.xib in Resources */,
 			);

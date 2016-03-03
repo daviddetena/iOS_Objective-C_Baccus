@@ -21,7 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    // Create model
+    // Create model(s)
     DTCWineModel *tintorro = [DTCWineModel initWithName:@"Bembibre"
                                         wineCompanyName:@"Dominio de Tares"
                                                    type:@"tinto"
@@ -32,13 +32,40 @@
                                                  rating:5
                                                   photo:[UIImage imageNamed:@"bembibre.jpg"]];
     
-    // Create controller
-    DTCWineViewController *wineVC = [[DTCWineViewController alloc] initWithModel:tintorro];
-    //DTCWebViewController *webVC = [[DTCWebViewController alloc] initWithModel:tintorro];
+    DTCWineModel *albarinno = [DTCWineModel initWithName:@"Zárate"
+                                        wineCompanyName:@"Zárate"
+                                                   type:@"white"
+                                                 origin:@"Rías Bajas"
+                                                 grapes:@[@"Albariño"]
+                                         wineCompanyWeb:[NSURL URLWithString:@"http://bodegas-zarate.com/productos/vinos/albarino-zarate/"]
+                                                  notes:@"El albariño Zárate es un vino blanco monovarietal que pertenece a la denominación de origen Rias Baixas. Considerado por la crítica especializada como uno de los grandes vinos blancos del mundo, el albariño ya es todo un mito"
+                                                 rating:4
+                                                  photo:[UIImage imageNamed:@"zarate.gif"]];
     
-    // Create UINavigationController and set as default root controller
-    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:wineVC];
-    [self.window setRootViewController:navVC];
+    DTCWineModel *champagne = [DTCWineModel initWithName:@"Contes de Champagne"
+                                         wineCompanyName:@"Champagne de Taittinger"
+                                                    type:@"other"
+                                                  origin:@"Champagne"
+                                                  grapes:@[@"Chardonnay"]
+                                          wineCompanyWeb:[NSURL URLWithString:@"http://www.taittinger.com"]
+                                                   notes:@"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu fringilla ligula. Sed consectetur libero sit amet pulvinar tincidunt. Mauris vehicula dui in metus porta tincidunt. Praesent commodo ornare metus semper pellentesque. Praesent vehicula ut leo eu suscipit. Aliquam eu velit sem. Donec accumsan mauris eget nibh vulputate rutrum. Integer condimentum ullamcorper aliquet. Duis tincidunt malesuada nisi ut consequat. In lacinia nec tellus non molestie. Donec ullamcorper ligula nisi, ac interdum nisl commodo at. Duis et nisi sed orci vehicula ullamcorper eget id ligula. Ut cursus posuere metus, vestibulum congue urna eleifend sed. Integer ultricies tellus eu neque convallis venenatis. Sed luctus, augue viverra consequat porta, massa arcu interdum ante, sed finibus diam purus vel neque. Nullam a est pellentesque, bibendum tellus quis, molestie lorem."
+                                                  rating:4
+                                                   photo:[UIImage imageNamed:@"comtesDeChampagne.jpg"]];
+    
+    // Create controllers
+    DTCWineViewController *redVC = [[DTCWineViewController alloc] initWithModel:tintorro];
+    DTCWineViewController *whiteVC = [[DTCWineViewController alloc] initWithModel:albarinno];
+    DTCWineViewController *otherVC = [[DTCWineViewController alloc] initWithModel:champagne];
+    
+    // Create UINavigationControllers for each wine
+    UINavigationController *redNavVC = [[UINavigationController alloc] initWithRootViewController:redVC];
+    UINavigationController *whiteNavVC = [[UINavigationController alloc] initWithRootViewController:whiteVC];
+    UINavigationController *otherNavVC = [[UINavigationController alloc] initWithRootViewController:otherVC];
+    
+    // Tab bar including the three wines
+    UITabBarController *tabBar = [[UITabBarController alloc] init];
+    [tabBar setViewControllers:@[redNavVC, whiteNavVC, otherNavVC]];
+    [self.window setRootViewController:tabBar];
     
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
