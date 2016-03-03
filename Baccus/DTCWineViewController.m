@@ -7,6 +7,7 @@
 //
 
 #import "DTCWineViewController.h"
+#import "DTCWebViewController.h"
 
 @interface DTCWineViewController ()
 
@@ -18,6 +19,7 @@
     if(self = [super initWithNibName:nil
                               bundle:nil]){
         _model = aModel;
+        self.title = aModel.name;
     }
     return self;
 }
@@ -41,7 +43,10 @@
 
 #pragma mark - Actions
 - (IBAction)displayWeb:(id)sender{
-    NSLog(@"Go to %@", self.model.wineCompanyWeb);
+    
+    // Create WebVC and push
+    DTCWebViewController *webVC = [[DTCWebViewController alloc] initWithModel:self.model];
+    [self.navigationController pushViewController:webVC animated:YES];
 }
 
 

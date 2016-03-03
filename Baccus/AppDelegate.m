@@ -33,11 +33,12 @@
                                                   photo:[UIImage imageNamed:@"bembibre.jpg"]];
     
     // Create controller
-    //DTCWineViewController *wineVC = [[DTCWineViewController alloc] initWithModel:tintorro];
-    DTCWebViewController *webVC = [[DTCWebViewController alloc] initWithModel:tintorro];
+    DTCWineViewController *wineVC = [[DTCWineViewController alloc] initWithModel:tintorro];
+    //DTCWebViewController *webVC = [[DTCWebViewController alloc] initWithModel:tintorro];
     
-    // Set controller as default root controller
-    [self.window setRootViewController:webVC];
+    // Create UINavigationController and set as default root controller
+    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:wineVC];
+    [self.window setRootViewController:navVC];
     
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
