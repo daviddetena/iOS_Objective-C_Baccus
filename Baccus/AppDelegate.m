@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "DTCWineModel.h"
+#import "DTCWineViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    // Create model
+    DTCWineModel *tintorro = [DTCWineModel initWithName:@"Bembibre"
+                                        wineCompanyName:@"Dominio de Tares"
+                                                   type:@"tinto"
+                                                 origin:@"El Bierzo"
+                                                 grapes:@[@"Mencia"]
+                                         wineCompanyWeb:[NSURL URLWithString:@"http://www.dominiodetares.com/portfolio/bembibre/"]
+                                                  notes:@"Vendiamiado a mano racimo a racimo, fermentado con su propia levadura natural y criado durante 16 meses en barricas de roble francés y americano con 24 meses extra en botella."
+                                                 rating:5
+                                                  photo:[UIImage imageNamed:@"bembibre.jpg"]];
+    
+    // Create controller
+    DTCWineViewController *wineVC = [[DTCWineViewController alloc] initWithModel:tintorro];
+    
+    // Set controller as default root controller
+    [self.window setRootViewController:wineVC];
+    
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
